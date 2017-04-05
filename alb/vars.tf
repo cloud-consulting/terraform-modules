@@ -22,8 +22,6 @@ variable "enable_deletion_protection" {
 	type = "string"
 }
 
-Name = "${var.tag_name}"
-
 variable "tag_name" {
 	type = "string"
 }
