@@ -1,1 +1,1 @@
-# (Application Load Balancer)[https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer]
+# [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer)
