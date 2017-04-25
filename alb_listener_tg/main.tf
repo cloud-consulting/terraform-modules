@@ -11,6 +11,7 @@ resource "aws_alb_target_group" "target_group" {
     healthy_threshold   = "${var.healthy_threshold}"
     protocol            = "${var.protocol}"
     path                = "${var.health_check}"
+    matcher             = "${var.matcher}"
   }
 }
 
@@ -20,7 +21,7 @@ resource "aws_alb_listener" "listener" {
    protocol = "${var.protocol}"
 
    default_action {
-     target_group_arn = "${aws_alb_target_group.target_group.id}"
+     target_group_arn = "${aws_alb_target_group.target_group.arn}"
      type = "forward"
    }
 }

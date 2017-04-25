@@ -28,3 +28,6 @@ variable "health_check" {}
 
 variable "alb_arn" {}
 
+variable "matcher" {
+	default = "200-299"
+}
