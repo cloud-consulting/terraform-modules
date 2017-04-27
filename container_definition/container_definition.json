@@ -20,7 +20,7 @@
     "logConfiguration": {
       "logDriver": "${log_driver}",
       "options": {
-        "awslogs-group": "${container_name}-${cluster_name}",
+        "awslogs-group": "${awslogs_group_name}",
         "awslogs-region": "${aws_region}"
       }
     }

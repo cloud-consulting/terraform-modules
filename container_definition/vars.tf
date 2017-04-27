@@ -25,3 +25,5 @@ variable "host_port" {}
 variable "volume_container_path" {}
 
 variable "volume_host_path" {}
+
+variable "awslogs_group_name" {}

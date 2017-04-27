@@ -13,6 +13,7 @@ data "template_file" "template" {
     protocol             = "${var.protocol}"
     log_driver           = "${var.log_driver}"
     aws_region           = "${var.aws_region}"
+    awslogs_group_name   = "${var.awslogs_group_name}"
   }
 }
 
