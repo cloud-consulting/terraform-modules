@@ -3,6 +3,7 @@ resource "aws_alb_target_group" "target_group" {
   port      = "${var.port}"
   protocol  = "${var.protocol}"
   vpc_id    = "${var.vpc_id}"
+  deregistration_delay = "${var.deregistration_delay}"
 
   health_check {
     timeout             = "${var.timeout}"
