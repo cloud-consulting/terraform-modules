@@ -1,5 +1,5 @@
 data "template_file" "template" {
-  template = "${file("${path.module}/definition.json")}"
+  template = "${file("${path.module}/container_definition.json")}"
 
   vars {
     container_name       = "${var.container_name}"
