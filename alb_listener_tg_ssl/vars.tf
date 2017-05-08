@@ -36,7 +36,13 @@ variable "deregistration_delay" {
 	default = "300"
 }
 
+variable "listener_port" {}
+
+variable "listener_protocol" {}
+
 variable "health_check_protocol" {}
+
+variable "health_check_port" {}
 
 variable "ssl_policy" {}
 
