@@ -8,6 +8,10 @@
       {
         "SourceVolume": "${container_name}-config",
         "containerPath": "${volume_container_path}"
+      },
+      {
+        "SourceVolume": "${container_name}-config-2",
+        "containerPath": "${volume_container_path_2}"
       }
     ],
     "portMappings": [
