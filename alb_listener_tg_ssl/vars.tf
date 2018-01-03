@@ -21,7 +21,7 @@ variable "healthy_threshold" {
 }
 
 variable "protocol" {
-  default = "HTTP"
+  default = "HTTPS"
 }
 
 variable "health_check" {}
@@ -29,21 +29,27 @@ variable "health_check" {}
 variable "alb_arn" {}
 
 variable "matcher" {
-	default = "200-299"
+  default = "200-299"
 }
 
 variable "deregistration_delay" {
-	default = "300"
+  default = "300"
 }
 
 variable "listener_port" {}
 
-variable "listener_protocol" {}
+variable "listener_protocol" {
+  default = "HTTPS"
+}
 
-variable "health_check_protocol" {}
+variable "health_check_protocol" {
+  default = "HTTPS"
+}
 
 variable "health_check_port" {}
 
-variable "ssl_policy" {}
+variable "ssl_policy" {
+  default = "ELBSecurityPolicy-2016-08"
+}
 
 variable "certificate_arn" {}
